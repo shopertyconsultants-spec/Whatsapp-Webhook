@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const app = express();
 app.use(express.json());
 
-const VERIFY_TOKEN = "shopertyy_verify_token"; // keep this exact value
+const VERIFY_TOKEN = "SHOPERTYY_2026_WEBHOOK"; // keep this exact value
 
 // 1️⃣ Meta verification
 app.get("/webhook", (req, res) => {
@@ -25,3 +25,4 @@ app.post("/webhook", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000);
+
